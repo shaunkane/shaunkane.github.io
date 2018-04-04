@@ -1,0 +1,19 @@
+body {margin: 20px 50px 50px; background-color: #fff;}
+body, p, li, td {font-family: Helvetica,Arial,sans-serif; font-size: 15px; }
+p, li { line-height: 1.4; }
+a {color: #6876BF; text-decoration: none;}
+a:hover {text-decoration: underline;}
+ul {list-style-type: square;} 
+ul, ol {margin-left: 0px; padding-left: 25px;}
+li {margin-bottom:10px; }
+h3 {font-size: 24px; margin-bottom: 4px;}
+.page {background-color: white; padding: 30px 0px 0px; border: 0px solid #888; clear: both; border-radius:10px}
+.title {font-weight: bold; font-size:32px; margin-top: 0px;}
+.header {vertical-align: middle; margin-bottom: 15px;}
+.best { font-weight: bold; color: #639;}
+.links {color: white; padding: 10px; background: #555669; border-radius:3px; text-align: center;}
+.links a {color: white; text-decoration: none;}
+.links a:hover {text-decoration: underline;}
+td {padding: 0px;}
+.faded { color: #aaa }
+.date { font-size: small; font-weight: bold;}

@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Rachel's Clock</title>
+		<meta name="viewport" content="width=device-width">
+		<script src="jquery.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href=" milligram.min.css">
+		<style>
+		h2 {
+			font-size: 1.8em; font-weight: bold;
+		}
+		h3 {
+			font-size: 1.6em;
+		}
+		</style>
+		<script>
+		var deviceId = "400034001247343432313031";
+		var accessToken = "91706d2910e1e7e1fc303f0cda35b4b5ddf638a7";
+		
+		function particleRequest(functionName, param) {
+			//alert(param);
+			var requestURL = "https://api.spark.io/v1/devices/" + deviceId + "/" + functionName + "/";
+		        $.post( requestURL, { params: param, access_token: accessToken });
+		      }
+		</script>
+	</head>
+	<body>
+		<h2>Rachel's Word Clock</h2>
+		
+		<h3>Sleep Mode</h3>
+		<p>Click the buttons to turn off the lights.</p>
+		<p><button class="button" onclick="particleRequest('toggleSleep','0')">Sleep Off</button><button onclick="particleRequest('toggleSleep','1')">Sleep On</button></p>
+		
+		<h3>Light Color</h3>
+		<p>Click a button to select a color.</p>
+		<p><button class="button button-outline" onclick="particleRequest('setColor','1')">White</button>
+			<button style="background: red;" onclick="particleRequest('setColor','2')">Red</button>
+			<button style="background: green;" onclick="particleRequest('setColor','3')">Green</button>
+			<button style="background: blue;" onclick="particleRequest('setColor','4')">Blue</button>
+			<button style="background: cyan; color: black;" onclick="particleRequest('setColor','7')">Cyan</button>
+			<button style="background: magenta;" onclick="particleRequest('setColor','5')">Magenta</button>
+			<button style="background: yellow; color: black;" onclick="particleRequest('setColor','6')">Yellow</button>
+		</p>
+		
+		<h3>Quiet Hours</h3>
+		<p>Set the display to automatically switch off at the specified time:</p>
+		<p><button class="button" onclick="particleRequest('setQStart','20')">8pm</button>
+			<button class="button" onclick="particleRequest('setQStart','21')">9pm</button>
+			<button class="button" onclick="particleRequest('setQStart','22')">10pm</button>
+			<button class="button" onclick="particleRequest('setQStart','23')">11pm</button>
+			<button class="button" onclick="particleRequest('setQStart','-1')">never</button>
+		</p>
+		
+		<p>Set the display to automatically switch on at the specified time:</p>
+		<p><button class="button" onclick="particleRequest('setQEnd','7')">7am</button>
+			<button class="button" onclick="particleRequest('setQEnd','8')">8am</button>
+			<button class="button" onclick="particleRequest('setQEnd','9')">9am</button>
+			<button class="button" onclick="particleRequest('setQEnd','10')">10am</button>
+		</p>
+		
+		<h3>Write Message</h3>
+		<p>Write a message below to display it on your clock for two minutes.</p>
+		<p><textarea id="msgText" rows="6" style="width: 400;"></textarea></p>
+		<p><button class="button" onclick="particleRequest('sendMessage',$('#msgText').val())">Write Message</button></p>
+		<p>&#x1F49C;</p>
+	</body>
+</html>

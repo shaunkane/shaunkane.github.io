@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Randomizer</title>
+		<script>
+			function randomize() {
+				setRandomItem("text1","item1");
+				setRandomItem("text2","item2");
+				setRandomItem("text3","item3");
+			}
+			
+			function setRandomItem(listName, itemName) {
+				var listItems = document.getElementById(listName).value.trim().split("\n");
+				var chosenItem = listItems[Math.floor(Math.random() * listItems.length)];
+				var item = document.getElementById(itemName);
+				item.innerText = chosenItem;
+			}
+			
+			window.onload = function(e) {
+				randomize();
+			}
+		</script>
+		<style>
+			body { font-family: Helvetica, Arial, sans-serif; background: #fff; margin: 20px; }
+			p { margin-bottom: 40px;}
+			.random { border: 1px dotted black; padding: 5px;}
+			#item1 { background: #FFB3C2; }
+			#item2 { background: #A3DCFF;}
+			#item3 { background: #FFF3AD;}
+			button { border: 1px solid black; background: #ddd; font-size: large; display: inline-block;}
+			th { font-weight: bold; text-align: left;}
+			textarea { font-size: medium; height: 200px;}
+		</style>
+	</head>
+	<body>
+		<h1>Project Randomizer</h1>
+		<p>To select a random project, click <button onclick="randomize();">Randomize</button>
+		
+		<p>Create <span id="item1" class="random">surface gestures</span> for a <span id="item2" class="random">podcast player</span> on a <span id="item3" class="random">wearable device</span>.</p>
+		<p>You can edit the lists below to add or remove options.</p>
+		<table>
+			<tr>
+				<th>Gesture type</th>
+				<th>Application</th>
+				<th>Device</th>
+			</tr>
+			<tr>
+				<td><textarea id="text1">touch surface gestures
+in-air hand gestures
+device motion gestures
+</textarea></td>
+				<td><textarea id="text2">music player
+podcast player
+audiobook player
+single player game
+multiplayer game
+messaging app
+email app
+smart home controller
+</textarea></td>
+				<td><textarea id="text3">desktop computer
+tablet
+mobile phone
+smart home device
+smartwatch
+wearable (non smartwatch) device				
+</textarea></td>
+			</tr>
+		</table>
+	</body>
+</html>
