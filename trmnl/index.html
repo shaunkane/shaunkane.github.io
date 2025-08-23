@@ -20,18 +20,13 @@
     <img id="dailyImage" alt="Daily Image">
     
     <script>
-        function loadDailyImage() {
-            const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-            const today = new Date();
-            const dayName = days[today.getDay()];
+        const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        const today = new Date();
+        const dayName = days[today.getDay()];
             
-            const img = document.getElementById('dailyImage');
-            img.src = `${dayName}.jpeg`;
-            img.alt = `${dayName.charAt(0).toUpperCase() + dayName.slice(1)} Image alt text`;
-        }
-        
-        // Load the appropriate image when the page loads
-        window.addEventListener('load', loadDailyImage);
+        const img = document.getElementById('dailyImage');
+        img.src = `${dayName}.jpeg`;
+        img.alt = `${dayName.charAt(0).toUpperCase() + dayName.slice(1)} Image alt text`;
     </script>
 </body>
 </html>
