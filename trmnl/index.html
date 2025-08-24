@@ -22,10 +22,10 @@
     <script>
         const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
         const today = new Date();
-        const dayName = days[0];
+        const dayName = days[today.getDay()];
             
         const img = document.getElementById('dailyImage');
-        img.src = `https://shaunkane.com/trmnl/${dayName}.jpeg`;
+        img.src = `https://shaunkane.com/trmnl/${dayName}.png`;
         img.alt = `${dayName.charAt(0).toUpperCase() + dayName.slice(1)} Image alt text`;
     </script>
 </body>
