@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #fff;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery a {
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.2s;
+        }
+        .gallery a:hover img {
+            transform: scale(1.05);
+        }
+        .gallery .play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 40px;
+            text-shadow: 0 0 10px rgba(0,0,0,0.7);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bootsy</h1>
+    <div class="gallery">
+        <a href="photos/797726644.jpg"><img src="thumbs/797726644.jpg" alt="Photo"></a>
+        <a href="photos/79772664485__45155568-2C8F-43D6-9907-F248FD121E8D.mp4" class="video"><img src="thumbs/79772664485__45155568-2C8F-43D6-9907-F248FD121E8D.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/797726723.jpg"><img src="thumbs/797726723.jpg" alt="Photo"></a>
+        <a href="photos/79772672367__61177214-D7B8-4DA2-AF2E-4D59100F56FE.jpeg"><img src="thumbs/79772672367__61177214-D7B8-4DA2-AF2E-4D59100F56FE.jpeg" alt="Photo"></a>
+        <a href="photos/79780836832__55C8E13E-6AB6-471F-8382-8F69FA50457C.mp4" class="video"><img src="thumbs/79780836832__55C8E13E-6AB6-471F-8382-8F69FA50457C.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/79790928521__E318F703-4A5E-4515-80F0-0908AFE2FCBD.jpeg"><img src="thumbs/79790928521__E318F703-4A5E-4515-80F0-0908AFE2FCBD.jpeg" alt="Photo"></a>
+        <a href="photos/79795395182__DD3EDB47-6B86-42B0-9789-09C678906318.jpeg"><img src="thumbs/79795395182__DD3EDB47-6B86-42B0-9789-09C678906318.jpeg" alt="Photo"></a>
+        <a href="photos/79823583144__C69DD9FD-E1D9-4D5A-942B-59C7FC5A56D5.mp4" class="video"><img src="thumbs/79823583144__C69DD9FD-E1D9-4D5A-942B-59C7FC5A56D5.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/79824661637__895D89E6-09B9-4F75-A938-E1F9D72D02AF.mp4" class="video"><img src="thumbs/79824661637__895D89E6-09B9-4F75-A938-E1F9D72D02AF.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/79839842965__B6E53661-D4AB-4D6C-A03E-64AE07889839.jpeg"><img src="thumbs/79839842965__B6E53661-D4AB-4D6C-A03E-64AE07889839.jpeg" alt="Photo"></a>
+        <a href="photos/79842412378__B2D893FF-E90E-45BE-BDD7-6C331FF47F7F.jpeg"><img src="thumbs/79842412378__B2D893FF-E90E-45BE-BDD7-6C331FF47F7F.jpeg" alt="Photo"></a>
+        <a href="photos/79945526255__1C43E7C5-9551-40CB-AE3F-127A568F001E.mp4" class="video"><img src="thumbs/79945526255__1C43E7C5-9551-40CB-AE3F-127A568F001E.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_0023.mp4" class="video"><img src="thumbs/IMG_0023.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_0024.mp4" class="video"><img src="thumbs/IMG_0024.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_0025.mp4" class="video"><img src="thumbs/IMG_0025.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_0026.mp4" class="video"><img src="thumbs/IMG_0026.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9336.jpeg"><img src="thumbs/IMG_9336.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9338.mp4" class="video"><img src="thumbs/IMG_9338.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9345.jpg"><img src="thumbs/IMG_9345.jpg" alt="Photo"></a>
+        <a href="photos/IMG_9348.jpg"><img src="thumbs/IMG_9348.jpg" alt="Photo"></a>
+        <a href="photos/IMG_9368.mp4" class="video"><img src="thumbs/IMG_9368.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9386.mp4" class="video"><img src="thumbs/IMG_9386.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9392.mp4" class="video"><img src="thumbs/IMG_9392.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9402.jpeg"><img src="thumbs/IMG_9402.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9417.mp4" class="video"><img src="thumbs/IMG_9417.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9439.mp4" class="video"><img src="thumbs/IMG_9439.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9449.jpeg"><img src="thumbs/IMG_9449.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9456.jpeg"><img src="thumbs/IMG_9456.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9469.mp4" class="video"><img src="thumbs/IMG_9469.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9470.mp4" class="video"><img src="thumbs/IMG_9470.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9475.mp4" class="video"><img src="thumbs/IMG_9475.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9484.jpeg"><img src="thumbs/IMG_9484.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9496.mp4" class="video"><img src="thumbs/IMG_9496.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9497.jpeg"><img src="thumbs/IMG_9497.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9506.mp4" class="video"><img src="thumbs/IMG_9506.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9507.mp4" class="video"><img src="thumbs/IMG_9507.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9598.mp4" class="video"><img src="thumbs/IMG_9598.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9641.jpeg"><img src="thumbs/IMG_9641.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9650.jpeg"><img src="thumbs/IMG_9650.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9669.jpeg"><img src="thumbs/IMG_9669.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9671.mp4" class="video"><img src="thumbs/IMG_9671.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9681.mp4" class="video"><img src="thumbs/IMG_9681.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9698.jpeg"><img src="thumbs/IMG_9698.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9716.mp4" class="video"><img src="thumbs/IMG_9716.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9751.mp4" class="video"><img src="thumbs/IMG_9751.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9757.jpeg"><img src="thumbs/IMG_9757.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9771.mp4" class="video"><img src="thumbs/IMG_9771.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9775.mp4" class="video"><img src="thumbs/IMG_9775.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9777.mp4" class="video"><img src="thumbs/IMG_9777.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9779.mp4" class="video"><img src="thumbs/IMG_9779.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9782.mp4" class="video"><img src="thumbs/IMG_9782.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9789.mp4" class="video"><img src="thumbs/IMG_9789.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+        <a href="photos/IMG_9794.jpeg"><img src="thumbs/IMG_9794.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9800.jpeg"><img src="thumbs/IMG_9800.jpeg" alt="Photo"></a>
+        <a href="photos/IMG_9802.mp4" class="video"><img src="thumbs/IMG_9802.mp4.png" alt="Video"><span class="play">&#9654;</span></a>
+    </div>
+</body>
+</html>
